@@ -4,6 +4,40 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
+const numero1= Number(prompt('informe um numero'))
+const numero2= Number(prompt('informe outro numero'))
+const numero3= Number(prompt('informe outro numero'))
+let crescente= [];
+
+if(numero1 > numero2 && numero3){
+    if(numero2 > numero3){
+    crescente = [numero1 + "-" + numero2 + '-' + numero3]
+    alert(`${crescente}`)
+    
+    }else{
+        crescente= [numero1 + "-" + numero3 + '-' + numero2]
+        alert(`${crescente}`)
+    }
+}
+else if(numero2 > numero3 && numero1){
+    if(numero1>numero3){
+    crescente = [numero2 + "-" + numero1 + "-" + numero3]
+    alert(`${crescente}`)
+    }else{
+        crescente= [numero2 + "-" + numero3 + "-" + numero1]
+    }
+}
+else if(numero3 > numero1 && numero2){
+    if(numero1>numero2){
+    crescente = [numero3 + "-" + numero1 + "-" + numero2]
+    alert(`${crescente}`)
+    }else{
+        crescente= [numero3 + "-" + numero2 + "-" + numero1]
+    }
+}
+else{
+    alert('valor invalido')
+}
 
 
     //PROCESSAMENTO

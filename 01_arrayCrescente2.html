@@ -4,7 +4,18 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
+const numero= Number(prompt('informe um numero'))
+const outronum= Number(prompt('informe outro numero'))
+let crescente= [];
 
+if(numero > outronum){
+    crescente = [outronum + "-" + numero]
+    alert(`${crescente}`)
+}
+else{
+    crescente = [numero + "-" + outronum]
+    alert(`${crescente}`)
+}
 
     //PROCESSAMENTO
 
