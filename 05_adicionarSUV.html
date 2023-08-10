@@ -6,9 +6,19 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a adição do veículo solicitado.
 
     //ENTRADA
-
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"]
+    const add= prompt('qual carro deseja adicionar algum carro na lista (S-sim N-não)')
+    
     //PROCESSAMENTO
+    if(add == 's'){
+        let carroadd= prompt('qual carro deseja adicionar')
+        carrosSUV.push(carroadd)
+        alert(`${carrosSUV}, carro add: ${carroadd}`)
+    }
+    else{
+        alert(`${carrosSUV}`)
+    }
+
 
 
     //SAÍDA

@@ -16,10 +16,20 @@ if(pergunta == 'tiggo'){
     alert(`${carrosSUV}, removido da lista: ${removidos}`)
 }
 else if(pergunta == 'sportage'){
-    removidos = carrosSUV.splice('sportage')
+    removidos = carrosSUV.splice(1,1)
     alert(`${carrosSUV}, removido da lista: ${removidos}`)
 }
-
+else if(pergunta == 'tucson'){
+    removidos = carrosSUV.splice(2,1)
+    alert(`${carrosSUV}, removido da lista: ${removidos}`)
+}
+else if(pergunta == 'ecosport'){
+    removidos = carrosSUV.splice(3,1)
+    alert(`${carrosSUV}, removido da lista: ${removidos}`)
+}
+else{
+    alert('valor invalido')
+}
     //SAÍDA
 
 </script>
