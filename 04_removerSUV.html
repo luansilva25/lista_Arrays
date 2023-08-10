@@ -8,12 +8,16 @@
     //ENTRADA
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"]
     const pergunta= prompt('qual carro deseja remover da lista (tiggo, sportage, tucson, ecosport)')
-    const removidos =[];
+    let removidos =[];
 
     //PROCESSAMENTO
 if(pergunta == 'tiggo'){
-    removidos= (carrosSUV.slice(0,1))
-    alert(`)
+    removidos= carrosSUV.shift('tiggo');
+    alert(`${carrosSUV}, removido da lista: ${removidos}`)
+}
+else if(pergunta == 'sportage'){
+    removidos = carrosSUV.splice('sportage')
+    alert(`${carrosSUV}, removido da lista: ${removidos}`)
 }
 
     //SAÍDA
