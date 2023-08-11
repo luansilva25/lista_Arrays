@@ -1,7 +1,7 @@
 <script>
     //Problema: Acertar cor
     //Crie o seguinte array, que contém sete elementos:
-    // const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    //const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
     //Peça para o usuário informar uma cor.
     //Faça o programa armazenar um número aleatório (entre 0 e 6).
     //Caso o usuário acerte a cor, que está na posição do array que coincide com o número aleatório gerado pelo computador, o programa deverá retornar:
@@ -10,10 +10,17 @@
     //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
 
     //ENTRADA
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"]
+let corInformada = prompt("Informe uma cor:").toLowerCase();
+let numeroAleatorio = Math.floor(Math.random() * 7);
 
-
+// Verifique se a cor informada pelo usuário coincide com a cor gerada aleatoriamente
     //PROCESSAMENTO
-
+    if (corInformada === nomeCores[numeroAleatorio]) {
+    alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${corInformada.toUpperCase()}!`);
+} else {
+    alert("NÃO FOI DESSA VEZ... TENTE NOVAMENTE!");
+}
 
     //SAÍDA
 
