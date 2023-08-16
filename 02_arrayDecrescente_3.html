@@ -12,7 +12,7 @@ let crescente= [];
 if(numero1 > numero2 && numero3){
     if(numero2 > numero3){
     crescente = [numero1 + "-" + numero2 + '-' + numero3]
-    alert(`${crescente.tofixed(2).replace(',','.')}`)
+    alert(`${crescente}`)
     
     }else{
         crescente= [numero1 + "-" + numero3 + '-' + numero2]
@@ -22,7 +22,7 @@ if(numero1 > numero2 && numero3){
 else if(numero2 > numero3 && numero1){
     if(numero1>numero3){
     crescente = [numero2 + "-" + numero1 + "-" + numero3]
-    alert(`${crescente.tofixed(2).replace(',','.')}`)
+    alert(`${crescente}`)
     }else{
         crescente= [numero2 + "-" + numero3 + "-" + numero1]
     }
@@ -30,7 +30,7 @@ else if(numero2 > numero3 && numero1){
 else if(numero3 > numero1 && numero2){
     if(numero1>numero2){
     crescente = [numero3 + "-" + numero1 + "-" + numero2]
-    alert(`${crescente.tofixed(2).replace(',','.')}`)
+    alert(`${crescente}`)
     }else{
         crescente= [numero3 + "-" + numero2 + "-" + numero1]
     }
