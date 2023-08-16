@@ -4,8 +4,8 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
-const numero= Number(prompt('informe um numero'))
-const outronum= Number(prompt('informe outro numero'))
+const numero= Number(prompt('informe um numero')).replace(',', '.')
+const outronum= Number(prompt('informe outro numero')).replace(',','.')
 let crescente= [];
 
 if(numero > outronum){

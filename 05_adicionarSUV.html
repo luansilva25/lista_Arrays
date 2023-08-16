@@ -7,11 +7,11 @@
 
     //ENTRADA
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"]
-    const add= prompt('qual carro deseja adicionar algum carro na lista (S-sim N-não)')
+    const add= prompt('qual carro deseja adicionar algum carro na lista (S-sim N-não)').trim().toLowerCase()
     
     //PROCESSAMENTO
     if(add == 's'){
-        let carroadd= prompt('qual carro deseja adicionar')
+        let carroadd= prompt('qual carro deseja adicionar').trim().toLowerCase()
         carrosSUV.push(carroadd)
         alert(`${carrosSUV}, carro add: ${carroadd}`)
     }
